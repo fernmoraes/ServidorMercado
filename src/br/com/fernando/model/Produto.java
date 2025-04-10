@@ -31,4 +31,15 @@ public class Produto {
     public String toString() {
         return nome + "; " + quantidade + "; " + valorUnitario + ";";
     }
+
+    // Metodo adicionar quantidade
+    public void adicionarQuantidade(int qtd){
+        this.quantidade += qtd;
+    }
+
+    // Metodo remover quantidade
+    public void removerQuantidade(int qtd){
+        this.quantidade -= qtd;
+        if (this.quantidade < 0)this.quantidade = 0;
+    }
 }
