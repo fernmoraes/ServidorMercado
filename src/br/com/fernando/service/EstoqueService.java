@@ -37,7 +37,7 @@ public class EstoqueService {
         }
     }
 
-    // Método para ler os produtos de um arquivo CSV e devolver uma lista
+    // Metodo para ler os produtos de um arquivo CSV e devolver uma lista
     public static List<Produto> lerEstoque(String caminho) {
         // Cria uma lista vazia para armazenar os produtos lidos do arquivo
         List<Produto> produtos = new ArrayList<>();

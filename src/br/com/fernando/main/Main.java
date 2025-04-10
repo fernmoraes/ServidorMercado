@@ -70,13 +70,13 @@ public class Main {
                             int qtd = Integer.parseInt(qtdTexto);
                             if (qtd > 0) {
                                 produtoExistente.adicionarQuantidade(qtd); // Atualiza a quantidade
-                                JOptionPane.showMessageDialog(null, "✅ Quantidade atualizada com sucesso!");
+                                JOptionPane.showMessageDialog(null, "Quantidade atualizada com sucesso!");
                                 EstoqueService.gravarEstoque(caminho, produtos); // Salva no CSV
                             } else {
-                                JOptionPane.showMessageDialog(null, "❌ Quantidade inválida.");
+                                JOptionPane.showMessageDialog(null, "Quantidade inválida.");
                             }
                         } catch (Exception e) {
-                            JOptionPane.showMessageDialog(null, "❌ Digite um número válido.");
+                            JOptionPane.showMessageDialog(null, "Digite um número válido.");
                         }
 
                     } else {
@@ -91,13 +91,13 @@ public class Main {
                                 // Adiciona novo produto à lista
                                 produtos.add(new Produto(nome, quantidade, preco));
 
-                                JOptionPane.showMessageDialog(null, "✅ Produto adicionado com sucesso!");
+                                JOptionPane.showMessageDialog(null, "Produto adicionado com sucesso!");
                                 EstoqueService.gravarEstoque(caminho, produtos); // Salva no CSV
                             } catch (Exception e) {
-                                JOptionPane.showMessageDialog(null, "❌ Preço inválido!");
+                                JOptionPane.showMessageDialog(null, "Preço inválido!");
                             }
                         } catch (Exception e) {
-                            JOptionPane.showMessageDialog(null, "❌ Quantidade inválida!");
+                            JOptionPane.showMessageDialog(null, "Quantidade inválida!");
                         }
                     }
                 }
