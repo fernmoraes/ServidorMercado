@@ -6,10 +6,10 @@ public class Produto {
     // Atributos privados (encapsulamento)
     private String nome;
     private int quantidade;
-    private String valorUnitario;
+    private double valorUnitario;
 
     // Construtor com parâmetros
-    public Produto(String nome, int quantidade, String valorUnitario) {
+    public Produto(String nome, int quantidade, double valorUnitario) {
         this.nome = nome;
         this.quantidade = quantidade;
         this.valorUnitario = valorUnitario;
@@ -22,7 +22,7 @@ public class Produto {
     public int getQuantidade() {
         return quantidade;
     }
-    public String getValorUnitario() {
+    public double getValorUnitario() {
         return valorUnitario;
     }
 
